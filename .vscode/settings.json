@@ -1,8 +1,4 @@
 {
-  // format with eslint
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
-  "editor.formatOnSaveMode": "file",
   "tailwindCSS.includeLanguages": {
     "plaintext": "html"
   },
@@ -12,13 +8,13 @@
   "files.exclude": {
     "**/node_modules": true
   },
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
   "eslint.workingDirectories": [
     {
       "mode": "auto"
     }
   ],
-  "files.eol": "\n"
+  "files.eol": "\n",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+  },
 }

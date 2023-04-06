@@ -1,16 +1,11 @@
 import "./App.css"
 
-import React, { useEffect } from "react"
-import { initializeIcons } from "@fluentui/react/lib/Icons"
-import {
-    createTheme,
-    LayerHost,
-    ThemeProvider,
-} from "@fluentui/react"
-
+import React from "react"
+import { createTheme, LayerHost, ThemeProvider } from "@fluentui/react"
 import Theme from "./Theme"
-
 import NavBar from "./components/NavBar"
+
+import { initializeIcons } from "@fluentui/react/lib/Icons"
 // https://github.com/microsoft/fluentui/wiki/Using-icons
 initializeIcons()
 
@@ -19,7 +14,7 @@ export const App: React.FunctionComponent = () => {
 
     // /*
     // Auto theme
-    useEffect(() => {
+    React.useEffect(() => {
         const systemTheme = (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches)
             ? Theme.dark
             : Theme.light
